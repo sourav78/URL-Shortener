@@ -14,6 +14,13 @@ async function generateShortUrl(req, res){
         visitedHistory: []
     })
 
+    // const allUrls = await urlModel.find({})
+
+    // return res.render("home", {
+    //     id: shortId,
+    //     urls: allUrls
+    // })
+
     res.status(200).json({
         success: true,
         id: shortId
